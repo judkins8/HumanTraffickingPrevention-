@@ -26,7 +26,7 @@ const knex = require('knex')(
         client:"pg",
         connection: {
             host: "localhost",
-            user: "brookewoodland",
+            user: "joshuajudkins",
             password:"lms385334",
             database:"project3",
             port: 5432

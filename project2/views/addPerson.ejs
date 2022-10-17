@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+    This is what displays after clicking the add person button
+    and will allow us to add missing persons to our table.
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/addPerson" method="POST">
+            <!-- <label for="person_id">ID</label>
+            <input type="text" id="person_id" name="person_id">
+            <br> -->
+            <label for="First_Name">First Name: </label>
+            <input type="text" id="First_Name" name="First_Name" autofocus>
+            <br>
+            <label for="Last_Name">Last Name: </label>
+            <input type="text" id="Last_Name" name="Last_Name">
+            <br>
+            <label for="Date_Missing">Date Missing: </label>
+            <input type="text" id="Date_Missing" name="Date_Missing">
+            <br>
+            <label for="Age_Missing">Age at missing: </label>
+            <input type="text" id="Age_Missing" name="Age_Missing">
+            <br>
+            <label for="City">City: </label>
+            <input type="text" id="City" name="City">
+            <br>
+            <label for="State">State: </label>
+            <input type="text" id="State" name="State">
+            <br>
+            <fieldset style="width: 100px;">
+                <legend>Gender: </legend>
+                <input type="radio" id="Male" name="Gender" value="M">
+                <label for="Male">Male</label><br>
+                <input type="radio" id="Female" name="Gender" value="F">
+                <label for="Female">Female</label><br>
+                <input type="radio" id="Other" name="Gender" value="O">
+                <label for="Other">Other</label><br>
+            </fieldset>
+            <label for="Race">Race: </label>
+            <input type="text" id="Race" name="Race">
+            <br>
+        <button type="submit">Add Person</button>
+    </form>
+</body>
+</html>

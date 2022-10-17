@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+    This is what displays after clicking the edit person button
+    and will allow us to edit the information for missing persons to our table.
+-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="/editPerson/" method="POST">
+            <fieldset style="width: 0px;">
+                <legend>Edit a Record: </legend>
+                    <br>
+                    <label for="person_id">Edit Person: </label>
+                    <br>
+                    <input type="hidden" id="person_id" name="person_id" value="<%= mytrafficking[0].person_id %>">
+                    <br>
+                    <label for="first_name">First Name: </label>
+                    <input type="text" id="first_name" name="first_name" value="<%= mytrafficking[0].First_Name %>">
+                    <br>
+                    <label for="last_name">Last Name: </label>
+                    <input type="text" id="last_name" name="last_name" value="<%= mytrafficking[0].Last_Name %>">
+                    <br>
+                    <label for="date_missing">Date at Missing: </label>
+                    <input type="text" id="date_missing" name="date_missing" value="<%= mytrafficking[0].Date_Missing %>">
+                    <br>
+                    <label for="age_missing">Age at missing: </label>
+                    <input type="number" step="1" min="0" max="100" id="age_missing" name="age_missing" value="<%= mytrafficking[0].Age_Missing %>">
+                    <br>
+                    <label for="city">City: </label>
+                    <input type="text" id="city" name="city" value="<%= mytrafficking[0].City %>">
+                    <br>
+                    <label for="state">State: </label>
+                    <input type="text" id="state" name="state" value="<%= mytrafficking[0].State %>">
+                    <br>
+                    <label for="gender">Gender: </label>
+                    <input type="text" id="gender" name="gender" value="<%= mytrafficking[0].Gender %>">
+                    <br>
+                    <label for="race">Race: </label>
+                    <input type="text" id="race" name="race" value="<%= mytrafficking[0].Race %>">
+
+            </fieldset>
+            <button type="submit">Save</button>
+        </form>
+    </body>
+</html>   

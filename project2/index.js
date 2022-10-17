@@ -1,7 +1,6 @@
 /*
    
     Joshua Judkins
-    IS 303 Section 003
 
     Project 3 - Human Trafficking in Utah with interactive table and database
 
